@@ -1,35 +1,53 @@
 @import './base.css';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.content-box {
+  padding: 20px 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  text-align: center;
+  width: 85%;
+}
+h2 {
+  color: #4172e7;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+ul{
+  width: 50%;
+  float: left;
+  margin: 2rem;
+}
+ul, ol {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  list-style: none;
+}
+
+li:last-child {
+  border-bottom: none;
 }
