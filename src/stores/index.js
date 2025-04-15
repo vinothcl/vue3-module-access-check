@@ -10,17 +10,22 @@ export const useAuthStore = defineStore({
               "user_is_super_admin": 0, // change to 1 for super admin
               "user_role": "Manager",
               "user_role_action_access": {
-                "module1": 1,
-                "module2": 0,
-                "module3": 1,
-                "module4": 0,
-                "module5": 1,
-                "module6": 1,
-                "module7": 0,
-                "module8": 1,
-                "module9": 0,
-                "module10": 1,
+                "module1": true,
+                "module2": false,
+                "module3": true,
+                "module4": false,
+                "module5": true,
+                "module6": true,
+                "module7": false,
+                "module8": true,
+                "module9": false,
+                "module10": true,
               }
             }
     }),
+    actions: {
+        updateAccess(moduleVal, accessVal) {
+            this.user.user_role_action_access[moduleVal] = accessVal;
+        },
+      }
 });

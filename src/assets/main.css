@@ -24,7 +24,7 @@ body, html {
   text-align: center;
   width: 85%;
 }
-h2 {
+h3 {
   color: #4172e7;
 }
 
@@ -50,4 +50,7 @@ li {
 
 li:last-child {
   border-bottom: none;
+}
+.cdir{
+  color: red;
 }
