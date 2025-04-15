@@ -24,7 +24,7 @@ function updateAccess(moduleval, accessValue) {
 <template>
   <div class="centered-container centered-container1">
     <div class="content-box">
-      <h1><b>A very simple Vue.js 3 module access check for users by custom directives(v-haveAccess, v-noAccess)</b></h1>
+      <h1><b>A very simple Vue.js 3 module access check for users by custom directives(<span class="cdir">v-haveAccess</span>, <span class="cdir">v-noAccess</span>)</b></h1>
       <br/>
       <ul>
         <li><h3><b>User Access check by <span class="cdir">v-haveAccess</span> directive</b></h3></li>
