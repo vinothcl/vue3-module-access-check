@@ -36,7 +36,8 @@ function updateAccess(moduleval, accessValue) {
       </ul>
       <ul>
         <li><h3><b>All Modules From User Store</b></h3></li>
-        <li v-for="(access, moduleval) in user.user_role_action_access"><input type="checkbox" @click="updateAccess(moduleval, access)" :checked="access">{{moduleval}}</li>
+        <li v-for="(access, moduleval) in user.user_role_action_access"><input type="checkbox" @click="updateAccess(moduleval, access)" :checked="access" :id="moduleval" class="checkbox"><label :for="moduleval">{{moduleval}}</label>
+</li>
       </ul>
     </div>    
   </div> 

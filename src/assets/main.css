@@ -59,3 +59,6 @@ li:last-child {
 .cdir{
   color: red;
 }
+.checkbox{
+  margin-right: 10px;
+}
