@@ -22,7 +22,7 @@ function updateAccess(moduleval, accessValue) {
 
 </script>
 <template>
-  <div class="centered-container" style="padding-bottom: 0;">
+  <div class="centered-container centered-container1">
     <div class="content-box">
       <h1><b>A very simple Vue.js 3 module access check for users by custom directives(v-haveAccess, v-noAccess)</b></h1>
       <br/>
@@ -40,7 +40,7 @@ function updateAccess(moduleval, accessValue) {
       </ul>
     </div>    
   </div> 
-  <div class="centered-container" style="padding-top: 0;">
+  <div class="centered-container centered-container2">
     <div class="content-box">
       <p>
         <h1>Files Lists:</h1>
